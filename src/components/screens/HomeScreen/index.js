@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Footer from '../../patterns/Footer'
 import Link from '../../Link'
 import { theme } from '../../theme/theme';
@@ -8,7 +9,9 @@ const SIDE_IMAGE_URL = '/images/alura-cases.png'
 
 function SideImage() {
   return (
+    
     <Box
+    
       styleSheet={{
         paddingHorizontal: {
           md: theme.space.x8,
@@ -93,9 +96,13 @@ function SideImage() {
   )
 }
 
+
 export default function HomeScreen() {
   return (
     <Box>
+      <Head>
+       <title>Home</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
